@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        *{border:1px solid rgb(16, 109, 62);}
+        .coitaner{min-height: 100vh;
+        display: flex;
+        flex-direction: row; /*direção do elemento*/
+        flex-wrap: wrap; /*quebra linha*/
+        justify-content: space-between;
+        align-items: center; /*como o elemento da linha será fixada*/
+        gap: 10px;  
+    }
+        .box{ width: 100px;}
+
+
+        *{border: 1px solid black;margin: 0px;padding: 0px;box-sizing: content-box;}
+        .coitaner{display:grid;
+        grid-template-columns: 50px 1fr 2fr;
+        grid-template-rows: 100px 500px 300px;
+    }
+    #box1{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;  
+    }
+        </style>
+</head>
+<body>
+    <div class="coitaner">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+        <div class="box" id="box5">box5</div>
+        <div class="box" id="box6">box6</div>
+        <div class="box" id="box7">box7</div>
+        <div class="box" id="box8">box8</div>
+        <div class="box" id="box9 ">box9</div>
+        <div class="box" id="box10">box10</div>
+    </div>
+    <link rel="stylesheet" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+    <div class="coitaner" </div>
+</body>
+</html>
